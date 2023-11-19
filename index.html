@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Ретро Игра: "Пинг-понг с ботом" berlandbor❤️</title>
+    <style>
+        #pongCanvas {
+            padding: 0;
+            background: grey;
+            display: block;
+            margin: 0 auto;
+        }
+        #restartButton {
+    /*position: absolute;*/
+    top: 50%;
+    left: 50%;
+    /*transform: translate(-50%, -50%);*/
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+body {
+  text-align: center;
+  background:#dad9b7 ;
+}
+h1 {
+  animation: colorChange 2s infinite; /* Пример анимации изменения цвета в течение 2 секунд, бесконечно повторяется */
+}
+@keyframes colorChange {
+  0% {
+    color: white; /* Начальный цвет текста */
+  }
+  50% {
+    color: #9b8c06; /* Цвет текста через половину времени анимации */
+  }
+  100% {
+    color: white; /* Конечный цвет текста, возвращаемся к начальному состоянию */
+  }
+}
+
+footer {
+  font-size: 24px;
+  background: linear-gradient(90deg, black, #9b8c06, black, #9b8c06, black);background-size: 200% 200%;
+  animation: colorShift 5s infinite;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-clip: text;
+  
+}
+@keyframes colorShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+#uprav {
+color: #7a4e02;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Игра: "Пинг-понг с ботом"</h1>
+<p id="uprav">Управление ракеткой "I am" сенсорное, тактильное и клавиатурное.</p>
+
+  </header>
+   <section>
+<!--div style="position: relative;"-->
+    <canvas id="pongCanvas" width="380" height="420" onclick="reloadGame()"></canvas>
+    <br>
+ <button id="restartButton">Restart</button>
+     </section>
+       <footer>
+    <p>
+      berlandbor ❤️
+    </p>
+  </footer>
+    <script src="common.js"></script>
+    <script src="ping.js"></script>
+
+</body>
+</html>
